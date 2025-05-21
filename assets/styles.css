@@ -1,0 +1,184 @@
+body {
+    margin: 0;
+    font-family: 'Roboto Condensed';
+}
+
+.navbar {
+    background-color: #2F36CF;
+    display: flex;
+    align-items: center;
+    padding: 10px 30px;
+    color: white;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+}
+
+.navbar .logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding-bottom: 3px;
+    position: relative;
+}
+
+.nav-links a.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: rgb(255, 251, 0);
+}
+
+.season-dropdown {
+    margin-left: auto;
+}
+
+.season-dropdown select {
+    background: #2C2ECC;
+    color: white;
+    border: none;
+    font-size: 1em;
+    font-family: 'Roboto Condensed';
+}
+
+.season-dropdown select:focus {
+    outline: none;
+}
+
+.toggle-buttons {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.toggle-buttons button {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 8px 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.toggle-buttons .active {
+    background-color: #ff5c5c;
+    color: white;
+}
+
+.teams-grid-continental {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 100px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.teams-grid-regular {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 150px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.teams-grid-challengers {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 150px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 1.33;
+    margin-bottom: 32px;
+    transition: transform 0.3s ease;
+    background-color: transparent;
+}
+
+.team:hover {
+  transform: scale(1.05);
+  z-index: 1;
+}
+
+.team img {
+    width: 150px;
+    height: auto;
+    border-radius: 4px;
+}
+
+.team_name {
+    color: #000;
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+.team a {
+    text-decoration: none;
+    color: #000;
+}
+
+.team a:visited {
+    text-decoration: none;
+}
+
+.description-section {
+    background-color: white;
+    padding: 40px;
+    margin: 50px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.description-section h2 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.description-section p {
+    line-height: 1.6;
+    color: #333;
+}
+
+.title-with-logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    /* spacing between logo and text */
+    margin-bottom: 20px;
+}
+
+.title-with-logo img {
+    width: 80px;
+    /* adjust as needed */
+    height: auto;
+}
