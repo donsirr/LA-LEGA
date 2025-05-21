@@ -124,8 +124,8 @@ body {
 }
 
 .team:hover {
-  transform: scale(1.05);
-  z-index: 1;
+    transform: scale(1.05);
+    z-index: 1;
 }
 
 .team img {
@@ -181,4 +181,113 @@ body {
     width: 80px;
     /* adjust as needed */
     height: auto;
+}
+
+.player-index-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Breadcrumb navigation */
+.breadcrumb {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Header section */
+.players-header h2 {
+    margin-bottom: 10px;
+}
+
+/* Alphabetical filter buttons */
+.alphabet-filter {
+    margin-bottom: 10px;
+}
+
+.alphabet-filter button {
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 5px 8px;
+    margin: 2px;
+    cursor: pointer;
+}
+
+/* Filters section */
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.filters select,
+.filters input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Table container for responsiveness */
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 100%; /* Optional: full width */
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+/* Players table styling */
+.players-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #002f5f;
+    color: white;
+    font-size: 14px;
+}
+
+.players-table th,
+.players-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #1e3b66;
+}
+
+.players-table thead {
+    background-color: #004b99;
+}
+
+.players-table tbody tr:nth-child(even) {
+    background-color: #003d7a;
+}
+
+/* Player avatar styling */
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+#player-data {
+    text-align: center;
+    font-weight: 600;
+}
+
+#player-data td, #player-data th {
+    padding: 10px;
+    vertical-align: middle;
+}
+
+#player-data img.avatar {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
 }
