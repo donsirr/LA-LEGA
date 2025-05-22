@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LA LEGA - Standings</title>
     <link rel="stylesheet" href="/assets/styles.css">
+    <link rel="stylesheet" href="/assets/css/standings.css">
     <link rel="icon" type="image/x-icon" href="/assets/img/Logo3.png">
 </head>
 
@@ -25,6 +26,24 @@
         </div>
     </div>
 
+    <h1>SEASON 2 STANDINGS</h1>
+
+    <select id="standings-filter">
+        <option>Continental Cup</option>
+        <option>Legacy Cup</option>
+        <option>Regular Season</option>
+      </select>
+      
+      <table class="standings-table">
+        <thead>
+          <tr>
+            <th>Rank</th><th>Team</th><th>W</th><th>L</th><th>Win%</th><th>Streak</th>
+          </tr>
+        </thead>
+        <tbody id="standings-body"></tbody>
+      </table>
+
+    <script src="/assets/scripts/standings.js"></script>
 </body>
 
 </html>

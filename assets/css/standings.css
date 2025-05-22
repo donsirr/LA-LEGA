@@ -1,0 +1,115 @@
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #222;
+}
+
+select {
+    display: block;
+    margin: 0 auto 30px auto;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease-in-out;
+}
+
+select:focus {
+    border-color: #0066cc;
+    box-shadow: 0 0 8px rgba(0, 102, 204, 0.3);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+th,
+td {
+    padding: 14px 12px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+    transition: background 0.2s ease-in-out;
+}
+
+th {
+    background: #004aad;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+}
+
+tr:hover td {
+    background-color: #f0f8ff;
+}
+
+tbody tr {
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+.standings-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    font-family: sans-serif;
+    animation: fadeIn 0.4s ease-in;
+}
+
+.standings-table thead {
+    background-color: #002D62;
+    color: #fff;
+}
+
+.standings-table tbody tr:nth-child(even) {
+    background-color: #f0f4f8;
+}
+
+.standings-table tbody tr:hover {
+    background-color: #dce9ff;
+    transition: background-color 0.3s ease;
+}
+
+.standings-table td,
+.standings-table th {
+    padding: 12px;
+}
+
+.team-logo {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    margin-right: 8px;
+    object-fit: contain;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.team-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: inherit;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s ease;
+}
+
+.team-link:hover {
+    color: #007bff;
+}
