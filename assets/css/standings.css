@@ -54,7 +54,9 @@ tbody tr {
 }
 
 .standings-table {
-    width: 100%;
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
     border-collapse: collapse;
     text-align: center;
     font-family: sans-serif;
