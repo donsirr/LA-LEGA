@@ -236,7 +236,9 @@ table {
 }
 
 .table-container {
-    overflow-x: auto;
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
 }
 
 /* Players table styling */
@@ -245,34 +247,34 @@ table {
     border-collapse: collapse;
     background-color: #002f5f;
     color: white;
-    font-size: 14px;
+    font-size: 20px;
 }
 
-.players-table th,
+.players-table thead th {
+    background-color: #0055aa;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    font-weight: bold;
+}
+
 .players-table td {
-    padding: 12px;
-    text-align: left;
-    border-bottom: 1px solid #1e3b66;
+    text-align: center;
+    vertical-align: middle;
+    padding: 14px 12px;
+    font-weight: bold;
+    color: white;
 }
 
-.players-table thead {
-    background-color: #004b99;
-}
-
+/* Row striping */
 .players-table tbody tr:nth-child(even) {
-    background-color: #003d7a;
+    background-color: #003366;
+}
+.players-table tbody tr:nth-child(odd) {
+    background-color: #004080;
 }
 
 /* Player avatar styling */
-.avatar {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-right: 8px;
-    vertical-align: middle;
-}
-
 #player-data {
     text-align: center;
     font-weight: 600;
@@ -287,7 +289,7 @@ table {
     display: inline-block;
     vertical-align: middle;
     margin-right: 8px;
-    width: 40px;
-    height: 40px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
 }
