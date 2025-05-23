@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #f7f7f7;
+    color: #222;
+}
+
+h1 {
+    text-align: center;
+    margin: 2rem 0 1rem;
+    font-size: 2rem;
+    color: #333;
+}
+
+#filter-bar {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+#filter-bar select {
+    padding: 0.6rem 1.2rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+#filter-bar select:hover,
+#filter-bar select:focus {
+    border-color: #888;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+}
+
+#matches {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 800px;
+    margin: 0 auto 4rem;
+    padding: 0 1rem;
+}
+
+.match-card {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    padding: 1.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.match-round {
+    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.match-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 10rem;
+}
+
+.match-team {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.match-team img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 0.4rem;
+    object-fit: contain;
+    border-radius: 4px;
+}
+
+.match-score {
+    min-width: 80px;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #111;
+}
+
+.set-scores {
+    margin-top: 1rem;
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.set {
+    background: #eaeaea;
+    border-radius: 8px;
+    padding: 0.3rem 0.7rem;
+    font-weight: 500;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.set-score {
+    display: inline-block;
+    width: 26px;
+    text-align: center;
+    font-weight:  bold;
+}
+
+.set-score.winner {
+    background: #28a745;
+    color: white;
+    border-radius: 4px;
+    padding: 2px 4px;
+    font-weight: 700;
+}

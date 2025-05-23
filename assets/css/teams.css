@@ -1,6 +1,13 @@
 body {
     margin: 0;
     padding: 0;
+    background: #f7f7f7;
+    color: #222;
+}
+
+body {
+    margin: 0;
+    padding: 0;
     background-color: #f3f3f3;
     color: #333;
 }

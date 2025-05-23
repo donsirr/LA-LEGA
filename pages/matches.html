@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LA LEGA - Matches</title>
     <link rel="stylesheet" href="/assets/styles.css">
+    <link rel="stylesheet" href="/assets/css/matches.css">
     <link rel="icon" type="image/x-icon" href="/assets/img/Logo3.png">
 </head>
 
@@ -25,6 +26,27 @@
         </div>
     </div>
 
+    <h1>LA LEGA MATCHES</h1>
+
+    <div id="filter-bar">
+        <select id="filter-competition">
+          <option value="All">All Competitions</option>
+          <option value="Continental Cup">Continental Cup</option>
+          <option value="Legacy Cup">Legacy Cup</option>
+          <option value="Regular Season">Regular Season</option>
+          <option value="Champions League">Champions League</option>
+        </select>
+      
+        <select id="filter-round">
+          <option value="All">All Rounds</option>
+        </select>
+      </div>
+
+    <div id="matches"></div>
+    
+
+
+    <script src="/assets/scripts/matches.js"></script>
 </body>
 
 </html>
