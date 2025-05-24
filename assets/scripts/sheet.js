@@ -3,7 +3,7 @@ const apiKey = 'AIzaSyDO92zcmF1yGNa7_JNV_gDxscgnQ-xT6LI';
 const range = 'TANGIBLES!A2:H';
 
 const endpoint = `https://sheets.googleapis.com/v4/spreadsheets/${sheetId}/values/${range}?key=${apiKey}`;
-const avatarApiBase = 'https://avatar-proxy-qxd1ngnpe-donsirrs-projects.vercel.app/api/avatar';
+const avatarApiBase = 'avatar-proxy-phi.vercel.app/api/avatar';
 
 const tbody = document.getElementById("player-data");
 
