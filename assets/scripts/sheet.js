@@ -12,7 +12,7 @@ fetch(endpoint)
 
         for (const row of rows) {
             const userId = row[0]; // Roblox user ID in column A
-            const proxyApi = `https://avatar-proxy-qxd1ngnpe-donsirrs-projects.vercel.app/api/avatar?userId=${userId}`; // Proxy endpoint
+            const proxyApi = `https://avatar-proxy-phi.vercel.app/api/avatar?userId=${userId}`; // Proxy endpoint
 
             fetch(proxyApi)
                 .then(response => response.json())
