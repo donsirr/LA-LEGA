@@ -12,26 +12,30 @@ fetch(endpoint)
 
         for (const row of rows) {
             const userId = row[0]; // Roblox user ID in column A
-            const avatarApi = `https://thumbnails.roblox.com/v1/users/avatar-headshot?userIds=${userId}&size=420x420&format=Png&isCircular=false`;
+            const proxyApi = `https://avatar-proxy-phi.vercel.app/api/avatar?userId=${userId}`; // Proxy endpoint
 
-            fetch(avatarApi)
+            fetch(proxyApi)
                 .then(response => response.json())
                 .then(avatarData => {
-                    const avatarUrl = avatarData.data[0].imageUrl;
+                    const avatarUrl = avatarData.imageUrl;
 
                     const tr = document.createElement('tr');
                     tr.innerHTML = `
-                        <td><img src="${avatarUrl}" class="avatar" alt="Player" /></td>
-                        <td>${row[1]}</td>
+                        <td><img src="${avatarUrl}" class="avatar" alt="Player" /> ${row[1]}</td>
                         <td>${row[2]}</td>
                         <td>${row[3]}</td>
                         <td>${row[4]}</td>
                         <td>${row[5]}</td>
+                        <td>${row[6]}</td>
                     `;
 
                     tbody.appendChild(tr);
                 })
-                .catch(err => console.error('Error fetching avatar:', err));
+                .catch(err => {
+                    console.error(`Error fetching avatar for userId ${userId}:`, err);
+                });
         }
     })
-    .catch(error => console.error('Error fetching player data:', error));
+    .catch(error => {
+        console.error('Error fetching player data:', error);
+    });
