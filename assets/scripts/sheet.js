@@ -11,19 +11,27 @@ fetch(endpoint)
         const rows = data.values;
 
         for (const row of rows) {
-            const avatarUrl = row[0]; // Avatar image link in column A
+            const userId = row[0]; // Roblox user ID in column A
+            const avatarApi = `https://thumbnails.roblox.com/v1/users/avatar-headshot?userIds=${userId}&size=420x420&format=Png&isCircular=false`;
 
-            const tr = document.createElement('tr');
-            tr.innerHTML = `
-                <td>${row[0]}</td>
-                <td>${row[1]}</td>
-                <td>${row[2]}</td>
-                <td>${row[3]}</td>
-                <td>${row[4]}</td>
-                <td>${row[5]}</td>
-            `;
+            fetch(avatarApi)
+                .then(response => response.json())
+                .then(avatarData => {
+                    const avatarUrl = avatarData.data[0].imageUrl;
 
-            tbody.appendChild(tr);
+                    const tr = document.createElement('tr');
+                    tr.innerHTML = `
+                        <td><img src="${avatarUrl}" class="avatar" alt="Player" /></td>
+                        <td>${row[1]}</td>
+                        <td>${row[2]}</td>
+                        <td>${row[3]}</td>
+                        <td>${row[4]}</td>
+                        <td>${row[5]}</td>
+                    `;
+
+                    tbody.appendChild(tr);
+                })
+                .catch(err => console.error('Error fetching avatar:', err));
         }
     })
     .catch(error => console.error('Error fetching player data:', error));
