@@ -129,16 +129,16 @@ body {
 }
 
 .team img {
-    width: 150px;
-    height: auto;
-    border-radius: 4px;
+    width: 200px;          /* Adjust this size as needed */
+    height: 200px;         /* Keeps all logos square and uniform */
+    object-fit: contain;  /* Ensures the image fits without distortion */
+    display: block;
+    margin: 0 auto 10px;  /* Centers image and adds spacing below */
 }
 
 .team_name {
-    color: #000;
-    display: block;
     text-align: center;
-    width: 100%;
+    font-size: 1.5rem;    /* Optional: adjust font size if needed */
 }
 
 .team a {
