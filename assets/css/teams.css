@@ -32,7 +32,8 @@ body {
 .team-logo {
     width: 120px;
     height: 120px;
-    object-fit: cover;
+    object-fit: fill;
+    border-radius: 8px;
 }
 
 .team-info {
