@@ -25,6 +25,7 @@ const teamSlugMap = {
     'up': 'University of the Philippines',
     'sti': 'STI College',
     'seoul': 'Seoul National University',
+    'thu': 'Tsinghua University',
 };
 
 const currentTeam = teamSlugMap[pageSlug];
