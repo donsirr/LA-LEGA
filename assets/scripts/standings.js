@@ -1,9 +1,9 @@
 const sheetId = '1xol0P--Cxp6Ze8xUibt3iTfnHYg-eu1n4ENG4XvFM3I';
 const apiKey = 'AIzaSyBxGVk4brDAlwMmJE-Pl5e2WhI36YA4Fmo';
 const sheetMap = {
+    "Regular Season": "STANDINGS-REGULAR",
     "Continental Cup": "STANDINGS-CONTINENTAL",
-    "Challengers Cup": "STANDINGS-CHALLENGERS",
-    "Regular Season": "STANDINGS-REGULAR"
+    "Challengers Cup": "STANDINGS-CHALLENGERS"
 };
 
 const filterSelect = document.getElementById('standings-filter');
@@ -71,4 +71,4 @@ async function loadStandings(sheetName) {
 }
 
 // Auto-load default
-loadStandings("STANDINGS-CONTINENTAL");
+loadStandings("STANDINGS-REGULAR");
