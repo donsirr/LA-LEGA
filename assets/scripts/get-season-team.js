@@ -28,6 +28,7 @@ const teamSlugMap = {
     'thu': 'Tsinghua University',
     'skku': 'Sungkyunkwan University',
     'sp': 'Singapore Polytechnic',
+    'ku': 'Korea University',
 };
 
 const currentTeam = teamSlugMap[pageSlug];
