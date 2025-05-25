@@ -2,7 +2,7 @@ const sheetId = '1xol0P--Cxp6Ze8xUibt3iTfnHYg-eu1n4ENG4XvFM3I';
 const apiKey = 'AIzaSyBxGVk4brDAlwMmJE-Pl5e2WhI36YA4Fmo';
 const sheetMap = {
     "Continental Cup": "STANDINGS-CONTINENTAL",
-    "Legacy Cup": "STANDINGS-LEGACY",
+    "Challengers Cup": "STANDINGS-CHALLENGERS",
     "Regular Season": "STANDINGS-REGULAR"
 };
 
