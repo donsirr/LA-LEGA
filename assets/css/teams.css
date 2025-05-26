@@ -32,7 +32,7 @@ body {
 .team-logo {
     width: 120px;
     height: 120px;
-    object-fit: cover;
+    object-fit: scale-down;
     border-radius: 8px;
 }
 
