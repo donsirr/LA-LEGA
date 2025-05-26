@@ -26,7 +26,7 @@ const teamSlugMap = {
     'sti': 'STI College',
     'seoul': 'Seoul National University',
     'thu': 'Tsinghua University',
-    'skku': 'Sungkyunkwan University',
+    'lpu': 'Lyceum of the Philippines University',
     'sp': 'Singapore Polytechnic',
     'ku': 'Korea University',
 };
