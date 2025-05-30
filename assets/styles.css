@@ -48,6 +48,13 @@ body {
 .season-dropdown {
     margin-left: auto;
 }
+.gfx {
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 50px;
+}
 
 .season-dropdown select {
     background: #2C2ECC;
