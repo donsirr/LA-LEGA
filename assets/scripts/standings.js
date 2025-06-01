@@ -51,10 +51,8 @@ async function loadStandings(sheetName) {
             tr.innerHTML = `
                 <td>${rank}</td>
                 <td>
-                    <a href="teams/continental/${country}.html" class="team-link">
-                        <img src="${teamId}" class="team-logo">
-                        ${teamName}
-                    </a>
+                    <img src="${teamId}" class="team-logo">
+                    ${teamName}
                 </td>
                 <td>${wins}</td>
                 <td>${losses}</td>
